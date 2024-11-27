@@ -12,7 +12,7 @@ export default function Task({ task, onToggleTask, onDeleteTask}) {
             <input type="checkbox" checked={finished} onChange={() => onToggleTask(id)} />
             {description}
            <button onClick={() => onDeleteTask(id)} style={{ marginLeft: '1rem', cursor: 'pointer' }}>
-             ❌
+             Delete
            </button>
         </li>
     );
